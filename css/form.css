@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('../images/the_final_cut_wpp.png');
+    font-family: sans-serif;
+    font-size: 1rem;
+    color:aliceblue;
+}
+
+.lista ul{
+    display:flex;
+    justify-items:center;
+    list-style-type: none;
+    align-items:center;
+    padding: 16px;
+}
+
+.lista a{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.lista nav a:hover{
+    color:violet;
+}
+
+header{
+    margin-top: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 115%;
+    color: azure;
+}
+
+form{
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+}
+
+#subtitulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+fieldset{
+    border: 0;
+}
+
+input,select,textarea, button{
+    border-radius: 3px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color:plum;
+}
+
+fieldset.grupo .campo{
+    float:left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select{
+    padding: 0.2em;
+    border: 1px solid purple;
+    box-shadow: 2px 2px 2px darkslateblue;
+    font-size: 100%;
+    width: 175px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo input[name="usuario"]{
+    width: 200px;
+}
+
+.campo select[id="genero"]{
+    width: 150px;
+}
+
+.campo input[type="email"]{
+    width: 365px;
+}
+
+.campo input[name="fav_msc"]{
+    width: 365px;
+}
+
+.campo select[id="fav_alb"]{
+    width: 365px;
+}
+
+.campo textarea{
+    border: 2px solid purple;
+    box-shadow: 1px 1px 1px darkslateblue;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: whitesmoke;
+}
+
+.botao{
+    font-size: 1.5rem;
+    background:darkorchid;
+    border: 0;
+    margin-bottom:1rem;
+    color: white;
+    padding: 0.2em 0.5em;
+    box-shadow: 2px 2px 2px whitesmoke;
+    text-shadow: 1px 1px 1px whitesmoke;
+    position:fixed;
+    top:80%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background:purple;
+    box-shadow: inset 2px 2px 2px whitesmoke;
+    text-shadow: none;
+}
+
+input[type="range"]{
+    appearance: none;
+    display: inline-block;
+    width: 200px;
+    height: 8px;
+    position: relative;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid purple;
+    background:whitesmoke;
+}
