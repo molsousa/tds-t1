@@ -5,32 +5,32 @@
 }
 
 body{
-    background-image:url('../images/the_final_cut_wpp.png');
+    background-image: url('../images/the_final_cut_wpp.png');
     font-family: sans-serif;
     font-size: 1rem;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .lista ul{
-    display:flex;
-    justify-items:center;
+    display: flex;
+    justify-items: center;
     list-style-type: none;
-    align-items:center;
+    align-items: center;
     padding: 16px;
 }
 
 .lista a{
-    color:aliceblue;
+    color: aliceblue;
     text-decoration: none;
 }
 
 .lista nav a:hover{
-    color:violet;
+    color: violet;
 }
 
 header{
     margin-top: 5%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -41,25 +41,29 @@ p{
 }
 
 form{
-    position:fixed;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display:flexbox;
+    position: relative;
+    margin: 1.5em auto;
+    padding: 2em;
+    max-width: 450px;
+    background: rgba(25, 0, 48, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 #titulo{
     font-family: Arial, Helvetica, sans-serif;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 #subtitulo{
     font-family: Arial, Helvetica, sans-serif;
-    color:aliceblue;
+    color: aliceblue;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -67,21 +71,23 @@ fieldset{
     border: 0;
 }
 
-input,select,textarea, button{
+input, select, textarea, button{
     border-radius: 3px;
 }
 
 .campo{
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .campo label{
     margin-bottom: 0.2em;
-    color:plum;
+    color: plum;
 }
 
 fieldset.grupo .campo{
-    float:left;
+    float: left;
     margin-right: 1em;
 }
 
@@ -91,9 +97,6 @@ fieldset.grupo .campo{
     box-shadow: 2px 2px 2px darkslateblue;
     font-size: 100%;
     width: 175px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .campo input[name="usuario"]{
@@ -119,9 +122,6 @@ fieldset.grupo .campo{
 .campo textarea{
     border: 2px solid purple;
     box-shadow: 1px 1px 1px darkslateblue;
-    display:block;
-    justify-content: center;
-    align-items: center;
     height: 150px;
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -138,22 +138,20 @@ fieldset.grupo .campo{
 
 .botao{
     font-size: 1.5rem;
-    background:darkorchid;
+    background: darkorchid;
     border: 0;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     color: white;
     padding: 0.2em 0.5em;
     box-shadow: 2px 2px 2px whitesmoke;
     text-shadow: 1px 1px 1px whitesmoke;
-    position:fixed;
-    top:80%;
-    left:50%;
-    margin-right:-50%;
-    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
 }
 
 .botao:hover{
-    background:purple;
+    background: purple;
     box-shadow: inset 2px 2px 2px whitesmoke;
     text-shadow: none;
 }
@@ -163,9 +161,8 @@ input[type="range"]{
     display: inline-block;
     width: 200px;
     height: 8px;
-    position: relative;
     border-radius: 5px;
     outline: none;
     border: 2px solid purple;
-    background:whitesmoke;
+    background: whitesmoke;
 }
