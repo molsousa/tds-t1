@@ -6,16 +6,13 @@
 
 body{
     background-image: url('../images/the_final_cut_wpp.png');
-    font-family: sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
     color: aliceblue;
 }
 
 .lista ul{
-    display: flex;
-    justify-items: center;
     list-style-type: none;
-    align-items: center;
     padding: 16px;
 }
 
@@ -45,7 +42,7 @@ form{
     margin: 1.5em auto;
     padding: 2em;
     max-width: 450px;
-    background: rgba(25, 0, 48, 0.8);
+    background: rgba(68, 49, 88, 0.644);
     border-radius: 15px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.2);
     display: flex;
@@ -55,12 +52,12 @@ form{
 }
 
 #titulo{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
 }
 
 #subtitulo{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
     display: flex;
     justify-content: center;
@@ -83,7 +80,7 @@ input, select, textarea, button{
 
 .campo label{
     margin-bottom: 0.2em;
-    color: plum;
+    color:violet;
 }
 
 fieldset.grupo .campo{
@@ -137,7 +134,7 @@ fieldset.grupo .campo{
 }
 
 .botao{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background: darkorchid;
     border: 0;
     margin-bottom: 1rem;
